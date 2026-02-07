@@ -15,19 +15,18 @@ export async function POST(req) {
 
         // 1️⃣ Mail to Admin
         const adminMail = {
-            from: process.env.EMAIL_USER, // must be your Gmail
-            to: process.env.EMAIL_TO, // your receiving email
-            subject: `📩 Contact: ${subject || 'New Submission'} from ${name}`,
-            text: message,
-            html: `
-        <h2>New Contact Form Submission</h2>
-        <p><b>Name:</b> ${name}</p>
-        <p><b>Email:</b> ${email}</p>
-        <p><b>Subject:</b> ${subject}</p>
-        <p><b>Message:</b></p>
-        <p>${message}</p>
-      `,
-        };
+  from: process.env.EMAIL_USER,
+  to: process.env.EMAIL_USER, // ✅ FIXED
+  subject: `📩 Contact: ${subject || "New Submission"} from ${name}`,
+  html: `
+    <h2>New Contact Form Submission</h2>
+    <p><b>Name:</b> ${name}</p>
+    <p><b>Email:</b> ${email}</p>
+    <p><b>Subject:</b> ${subject}</p>
+    <p><b>Message:</b></p>
+    <p>${message}</p>
+  `,
+};
 
         // 2️⃣ Thank-you Mail to User
         const userMail = {

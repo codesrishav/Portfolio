@@ -17,8 +17,8 @@ const dosis = Dosis({
 
 export const metadata = {
   title: {
-    default: "Apurv | Creative Full Stack Engineer",
-    template: "%s • Apurv | Creative Full Stack Engineer",
+    default: "Rishav | Creative Full Stack Engineer",
+    template: "%s • Rishav | Creative Full Stack Engineer",
   },
   description: "I enjoy creating frontend solutions with solid foundations, scalability, and excellent user experiences.",
   robots: {
@@ -26,30 +26,30 @@ export const metadata = {
     follow: true,
   },
   keywords: [
-    "xeylous.xyz", "Apurv", "Portfolio", "Creative Full Stack Developer",
+    "codesrishav.me", "Rishav", "Portfolio", "Creative Full Stack Developer",
     "Frontend Developer", "Software Engineer", "Web Developer", "JavaScript Developer",
-    "React Developer", "Next.js Developer", "Apurv Frontend Developer",
-    "Apurv Software Engineer", "Apurv Web Developer", "Apurv JavaScript Developer",
-    "Apurv React Developer", "Apurv Next.js Developer"
+    "React Developer", "Next.js Developer", "Rishav Frontend Developer",
+    "Rishav Software Engineer", "Rishav Web Developer", "Rishav JavaScript Developer",
+    "Rishav React Developer", "Rishav Next.js Developer"
   ],
-  authors: [{ name: "Apurv - Creative Full Stack Developer" }],
+  authors: [{ name: "Rishav - Creative Full Stack Developer" }],
   openGraph: {
     type: "website",
-    siteName: "Apurv",
+    siteName: "Rishav",
     description: "I enjoy creating end-to-end solutions with solid foundations, scalability, and excellent user experiences.",
     title: {
-      default: "Apurv | Creative Full Stack Engineer",
-      template: "%s • Apurv | Creative Full Stack Engineer",
+      default: "Rishav | Creative Full Stack Engineer",
+      template: "%s • Rishav | Creative Full Stack Engineer",
     },
     images: [{ url: "https://ik.imagekit.io/xeylous/Gemini_Generated_Image_3vsqck3vsqck3vsq.png" }],
-    url: "https://apurv.xyz",
+    url: "https://rishav.xyz",
   },
   twitter: {
     card: "summary_large_image",
-    site: "@xeylous",
+    site: "@codesrishav",
     title: {
-      default: "Apurv | Creative Full Stack Engineer",
-      template: "%s • Apurv | Creative Full Stack Engineer",
+      default: "Rishav | Creative Full Stack Engineer",
+      template: "%s • Rishav | Creative Full Stack Engineer",
     },
     description: "I enjoy creating End-to-end solutions with solid foundations, scalability, and excellent user experiences.",
     images: ["https://ik.imagekit.io/xeylous/Gemini_Generated_Image_3vsqck3vsqck3vsq.png"],
@@ -58,7 +58,7 @@ export const metadata = {
     icon: "/favicon.svg",
   },
   alternates: {
-    canonical: "https://apurv.xyz",
+    canonical: "https://rishav.xyz",
   },
 };
 

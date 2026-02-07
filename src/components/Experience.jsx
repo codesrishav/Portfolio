@@ -10,27 +10,18 @@ export default function Experience() {
   const containerRef = useRef(null);
   
   const experiences = [
-    {
-      role: "Agentic AI Research Intern",
-      company: "CodeApto",
-      period: "Aug 2025 - Present",
-      description: [
-        "Researching and developing agentic AI systems capable of autonomous reasoning and planning.",
-        "Explored multi-agent frameworks and LLM orchestration for real-world problem-solving.",
-        "Worked on integrating AI agents with external tools, APIs, and memory for task automation."
-      ]
-    },
-    {
-      role: "Software Developer Intern",
-      company: "CodeApto",
-      period: "Jul 2024 - Feb 2025",
-      description: [
-        "Developed full-stack applications using the MERN Stack.",
-        "Built and optimized scalable APIs and responsive frontends.",
-        "Collaborated in an agile team environment and improved backend performance."
-      ]
-    }
-  ];
+  {
+    role: "Full Stack Developer",
+    company: "Launch Vyapar",
+    period: "Oct 2025 - Jan 2026",
+    description: [
+      "Developed a full-stack food delivery web application with a strong focus on building responsive and user-friendly frontend interfaces using React.js.",
+      "Built and integrated RESTful APIs using Node.js and Express.js, enabling seamless communication between frontend and backend services.",
+      "Managed application data using MongoDB (MongoDB Atlas) and implemented JWT-based authentication for secure user access.",
+      "Deployed and maintained the application on Vercel, ensuring optimized performance and smooth client–server integration."
+    ]
+  }
+];
 
   useGSAP(() => {
     const tl = gsap.timeline({

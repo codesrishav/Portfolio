@@ -40,10 +40,10 @@ export default function Header() {
       {/* Merged Navbar Content */}
       <nav className="absolute top-0 left-0 w-full z-50 flex justify-center pt-4 md:pt-14">
         <div className="w-full max-w-[1100px] flex justify-between md:w-[85%] px-8 md:px-0">
-          <div className="text-xl font-normal">Xeylous</div>
+          <div className="text-xl font-normal">Rishav</div>
           <div className="text-sm font-normal flex items-center gap-6">
             <a 
-              href="https://resume.xeylous.xyz"
+              href="/MyResume.pdf"
               target="_blank"
               rel="xeylous resume"
               className="group relative flex items-center justify-center font-medium text-[var(--linear-grey)] transition-colors duration-300 ease-out hover:text-white"
@@ -130,7 +130,8 @@ export default function Header() {
               role="img"
               aria-label="Xeylous's Picture"
               className="w-full h-full block bg-cover bg-center"
-              style={{ backgroundImage: "url('https://ik.imagekit.io/xeylous/Profile%20pic.png')" }}
+              style={{ backgroundImage: "url('assets/Profile.jpeg')" }}
+
             />
           </div>
           <span className="absolute border-2 border-[var(--linear-grey)] bg-transparent opacity-60 w-[90%] h-[220px] xs:h-[260px] sm:h-[300px] md:h-[330px] top-0 lg:h-[350px] lg:bottom-0 lg:top-auto"></span>

@@ -1,6 +1,6 @@
 'use client';
 import React, { useRef } from 'react';
-import IconArrowUp from '../assets/icons/IconArrowUp';
+import IconArrowUp from '../../public/assets/icons/IconArrowUp';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -11,50 +11,57 @@ export default function Projects() {
   const containerRef = useRef(null);
 
   const projects = [
-    {
-      id: 1,
-      name: "Ayur Sathi",
-      tags: "Blockchain / Smart Contracts / React",
-      description: "Permissioned blockchain with smart contracts, geo-fenced harvest rules and QR-powered consumer provenance — built for ethical sourcing.",
-      url: "https://ayur-sathi.vercel.app/"
-    },
-    {
-      id: 2,
-      name: "Elevate BPM",
-      tags: "BPM / Automation / Performance",
-      description: "Business Process Management platform to streamline workflows. Features process automation, team collaboration, and performance tracking.",
-      url: "https://elevate-v2.vercel.app/"
-    },
-    {
-      id: 3,
-      name: "Testispace",
-      tags: "Nextjs / Node.js / MongoDB",
-      description: "TestiSpace is a futuristic, all-in-one SaaS platform for collecting and embedding video & text testimonials. Features a Space aesthetic, one-line embeddable widgets, and seamless media management. Built with Next.js 14, TypeScript, and MongoDB",
-      url: "https://testispace.vercel.app/"
-    },
-    {
-     id: 4,
-     name: "Telaiya Tourism",
-     tags: "Tourism / React / Design",
-     description: "Tourism website promoting Telaiya Dam. Showcases destinations and activities with a visually appealing responsive design.",
-     url: "https://telaiya-tourism.vercel.app/"
-   },
-     {
-      id: 5,
-      name: "EtherList",
-      tags: "React / Solidity / Metamask",
-      description: "Etherlist is a decentralized to-do app powered by Ethereum. Your tasks are securely stored on the blockchain, ensuring transparency and ownership. Connect your wallet, add tasks, and track your progress — all without a centralized server.",
-      url: "https://etherlist-five.vercel.app/"
-    },
-    {
-      id: 6,
-      name: "CrypTransfer",
-      tags: "Web3 / DeFi / Ethereum",
-      description: "Decentralized dApp for secure ERC-20 token and ETH transfers. Ensures trustless, transparent, and gas-optimized transactions.",
-      url: "https://cryp-transfer.vercel.app/"
-    }
-   
-  ];
+  {
+    id: 1,
+    name: "AyurSaathi",
+    tags: "Next.js / React / Tailwind CSS",
+    description:
+      "Group project developed for Smart India Hackathon (SIH) addressing a problem statement by the Ministry of AYUSH. Contributed as a frontend developer, building responsive, SEO-friendly pages and reusable UI components integrated with backend APIs.",
+    url: "https://ayur-sathi.vercel.app/"
+  },
+  {
+    id: 2,
+    name: "Food Delivery Web Application",
+    tags: "React / Node.js / Express / MongoDB",
+    description:
+      "Full-stack food delivery web application featuring user authentication, menu browsing, and food ordering workflows. Built RESTful APIs, implemented JWT-based authentication, and deployed the application on Vercel.",
+    url: "https://food-express-gilt.vercel.app/"
+  },
+  {
+    id: 3,
+    name: "ElevateBPM – Client Process Mapping",
+    tags: "React / Next.js / Tailwind CSS",
+    description:
+      "Modern, responsive client process mapping platform focused on performance and SEO. Built dynamic UI components, integrated REST APIs, and added smooth animations to enhance user experience.",
+    url: "https://elevate-v2.vercel.app/"
+  },
+  {
+    id: 4,
+    name: "Weather Forecast Web Application",
+    tags: "React / JavaScript / Weather API",
+    description:
+      "Early-stage React project demonstrating API integration and state management. Displays real-time weather data, 7-day forecasts, and Celsius/Fahrenheit conversion with custom application logic.",
+    url: "https://weather-forecast-eight-gules.vercel.app/"
+  },
+  {
+    id: 5,
+    name: "Telaiya Tourism",
+    tags: "React / UI Design / Responsive Web",
+    description:
+      "Tourism website showcasing Telaiya Dam and nearby attractions. Designed a visually appealing, responsive interface to highlight destinations, activities, and local tourism information.",
+    url: "https://telaiya-tourism.vercel.app/"
+  },
+  {
+  id: 6,
+  name: "Online Code Editor",
+  tags: "HTML / CSS / JavaScript / Web App",
+  description:
+    "Web-based online code editor that allows users to write and compile HTML, CSS, and JavaScript in real time. Features live preview, responsive layout, and a clean UI for practicing front-end development.",
+  url: "https://your-code-editor-link.vercel.app/"
+}
+
+];
+
 
   useGSAP(() => {
     const tl = gsap.timeline({
