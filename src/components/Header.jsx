@@ -12,15 +12,12 @@ export default function Header() {
       
       if (currentScrollY > 50) {
         if (currentScrollY > lastScrollY.current) {
-          // Scrolling down
-          setIsVisible(false);
+          setIsVisible(false); // Scrolling down
         } else {
-          // Scrolling up
-          setIsVisible(true);
+          setIsVisible(true); // Scrolling up
         }
       } else {
-        // At top
-        setIsVisible(true);
+        setIsVisible(true); // At top
       }
 
       lastScrollY.current = currentScrollY;
@@ -35,9 +32,9 @@ export default function Header() {
 
   return (
     <header 
-      className={`w-full h-fit grid relative place-items-center bg-[var(--hack-bg)] pt-[90px] pb-[80px] md:pt-[132px] md:pb-[50px]  top-10 `}
+      className={`w-full h-fit grid relative place-items-center bg-[var(--hack-bg)] pt-[90px] pb-[80px] md:pt-[132px] md:pb-[50px] top-10`}
     >
-      {/* Merged Navbar Content */}
+      {/* Navbar */}
       <nav className="absolute top-0 left-0 w-full z-50 flex justify-center pt-4 md:pt-14">
         <div className="w-full max-w-[1100px] flex justify-between md:w-[85%] px-8 md:px-0">
           <div className="text-xl font-normal">Rishav</div>
@@ -55,15 +52,12 @@ export default function Header() {
         </div>
       </nav>
 
-      {/* Hand Image (Before element replacement) */}
-      <div 
-        className="lg:block absolute top-[0rem] -left-24 w-[26rem] h-[26rem] bg-no-repeat bg-contain scale-[0.6] hidden  pointer-events-none"
-        style={{ backgroundImage: "url('https://raw.githubusercontent.com/adeolaadeoti/adeolaadeoti-v2/main/public/webp/hand-left.webp')" }}
-      />
-
+      {/* Main Content */}
       <div className="w-full max-w-[1100px] h-fit flex items-center justify-between flex-col lg:flex-row lg:w-[85%] px-6 md:px-0 mt-0">
+        {/* Text Section */}
         <div className="w-full lg:w-auto h-fit text-left flex flex-col items-start md:items-center md:text-center lg:items-start lg:text-left justify-between">
           <div className="w-full lg:w-[420px] h-auto mx-auto lg:mx-0 mt-12 lg:mt-16">
+            {/* Gradient Headings */}
             <div className="relative h-fit w-max md:mx-auto lg:mx-0 overflow-hidden mb-[30px] bg-clip-text text-transparent bg-[length:500%_500%] animate-[slime_45s_ease_infinite] bg-gradient-to-r from-[#fde1ff] via-[#e0e7ff] to-[#daf1ff] via-[#fffae9] to-[#fde1ff]">
              <style jsx>{`
                 .gradient-text {
@@ -108,14 +102,13 @@ export default function Header() {
             </div>
 
             <p className="m-0 mt-[0.7rem] text-[var(--linear-grey)] font-medium leading-[1.8] w-full lg:w-full pl-0 lg:pl-0 md:text-center lg:text-left">
-              I build end-to-end digital products that are scalable, reliable and crafted with strong attraction to user exprience.
+              I build end-to-end digital products that are scalable, reliable and crafted with strong attraction to user experience.
             </p>
           </div>
 
           <div className="w-full lg:w-max h-fit flex items-start md:items-center md:justify-center lg:items-center lg:justify-between mb-8 lg:mb-[1.2rem] mt-[40px] lg:mt-[90px] gap-x-[30px] lg:gap-x-[50px] pl-0 lg:pl-0">
-             {/* Using max-w-[50%] for mobile as per original SCSS logic roughly */}
             <p className="max-w-[40%] md:max-w-[45%] lg:max-w-[220px] h-fit leading-[1.5] text-[0.6em] md:text-[0.8em] lg:text-[0.9em] md:text-center lg:text-left">
-             I create real world products with clean, scalable code.
+              I create real world products with clean, scalable code.
             </p>
 
             <p className="max-w-[50%] md:max-w-[45%] lg:max-w-[220px] h-fit leading-[1.5] text-[0.6em] md:text-[0.8em] lg:text-[0.9em] md:text-center lg:text-left">
@@ -124,18 +117,21 @@ export default function Header() {
           </div>
         </div>
 
-        <div className="h-[200px] w-[220px] xs:h-[240px] xs:w-[260px] sm:h-[280px] sm:w-[300px] md:h-[340px] md:w-[360px] lg:h-[400px] lg:w-[400px] relative flex items-center flex-col my-10 sm:my-16 lg:my-0 mx-auto">
-          <div className="absolute z-[20] h-[200px] xs:h-[240px] sm:h-[280px] md:h-[320px] lg:h-[380px] w-full">
-            <div
-              role="img"
-              aria-label="Xeylous's Picture"
-              className="w-full h-full block bg-cover bg-center"
-              style={{ backgroundImage: "url('assets/Profile.jpeg')" }}
-
+        {/* Profile Photo Section */}
+        <div className="flex justify-center my-10 sm:my-16 lg:my-0">
+          <div className="relative inline-block">
+            {/* Image */}
+            <img
+              src="assets/Profile.jpeg"
+              alt="Xeylous's Picture"
+              className="block w-auto h-auto max-w-[400px] object-contain"
             />
+
+            {/* Outline exactly around the image */}
+            <span className="absolute top-0 left-0 w-full h-full border-2 border-[var(--linear-grey)] opacity-60"></span>
           </div>
-          <span className="absolute border-2 border-[var(--linear-grey)] bg-transparent opacity-60 w-[90%] h-[220px] xs:h-[260px] sm:h-[300px] md:h-[330px] top-0 lg:h-[350px] lg:bottom-0 lg:top-auto"></span>
         </div>
+
       </div>
     </header>
   );
