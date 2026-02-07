@@ -116,21 +116,21 @@ export default function Header() {
             </p>
           </div>
         </div>
+{/* Profile Photo Section */}
+<div className="flex justify-center my-10 sm:my-16 lg:my-0">
+  <div className="relative inline-block">
+    {/* Image */}
+    <img
+      src="assets/Profile.jpeg"
+      alt="Xeylous's Picture"
+      className="block w-[200px] xs:w-[240px] sm:w-[280px] md:w-[360px] lg:w-[400px] h-auto object-contain"
+    />
 
-        {/* Profile Photo Section */}
-        <div className="flex justify-center my-10 sm:my-16 lg:my-0">
-          <div className="relative inline-block">
-            {/* Image */}
-            <img
-              src="assets/Profile.jpeg"
-              alt="Xeylous's Picture"
-              className="block w-auto h-auto max-w-[400px] object-contain"
-            />
+    {/* Outline exactly around the image */}
+    <span className="absolute top-0 left-0 w-full h-full border-2 border-[var(--linear-grey)] opacity-60"></span>
+  </div>
+</div>
 
-            {/* Outline exactly around the image */}
-            <span className="absolute top-0 left-0 w-full h-full border-2 border-[var(--linear-grey)] opacity-60"></span>
-          </div>
-        </div>
 
       </div>
     </header>
